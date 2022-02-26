@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal Finder</title>
+    <link rel="stylesheet" href="food1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+    />
+  </head>
+  <body onload="load()" >
+    <!-- Preloader Code starts -->
+    <div id="loader">
+      <h1 id="h1">Cooking in progress..</h1>
+    <div id="cooking">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+         <div class="bubble"></div>
+        <div class="bubble"></div>
+      <div id="area">
+        <div id="sides">
+            <div id="pan"></div>
+            <div id="handle"></div>
+        </div>
+        <div id="pancake">
+          <div id="pastry"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    var preloader = document.getElementById("loader");
+        function load() {
+          setTimeout(() => {
+            preloader.style.display = "none";
+            document.getElementById("main_body");
+          }, 2000);
+        }
+  </script>
+  <!--  display for foodies -->
+  <div style="display:box;">
+    <nav id="navbar">
+      <div id="logo">
+          <img src="logo.png" alt="MyOnlineMeal.com">
+      </div>
+      <ul>
+          <li class="item"><a href="#home">Home</a></li>
+          <li class="item"><a href="#services-container">Services</a></li>
+          <li class="item"><a href="#client-section">favorite</a></li>
+          <li class="item"><a href="#contact">Contact Us</a></li>
+      </ul>
+
+      
+
+    <div class="section-toggles">
+      <button class="favourites glow-button">
+        <a href="mylist.html">
+        <i class="fab fa-gratipay"></i>
+        </a>
+      </button>
+    </div>
+    </nav>
+
+  </div>
+
+
+    <div class="container" style="display: center;">
+        <h1>Meal Finder</h1>
+      <div class="flex">
+        <form id="submit" class="flex">
+          <input type="text" id="search" placeholder="Search Your Meal" />
+          <button class="search-btn" type="submit">
+            <i class="fa fa-search"></i>
+          </button>
+        </form>
+        <button class="random-btn" id="random">
+            <i class="fas fa-random"></i>
+        </button>
+      </div>
+      <div id="result-heading"></div>
+      <div id="meals" class="meals">
+        
+      </div>
+      <div id="single-meal"></div>
+    </div>
+
+
+    <script src="food1.js"></script>
+  </body>
+</html>
