@@ -1,5 +1,5 @@
 # Mealfinder
- I create a a meal finder App
+ --> I create a a meal finder App
 #Problem Statement
  Create a meal app to store and search meals. Use ONLY vanilla javascript, no libraries or frameworks allowed for Javascript.
 
